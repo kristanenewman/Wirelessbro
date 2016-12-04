@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3"><!-- side menu -->
+          <form class="mb-1 mt-1">
+            <input type="text" class="form-control" placeholder="Search..." autocomplete="off">
+          </form>
+
+          <nav>
+            <div class="card"><!-- buyer card -->
+              <div class="card-header">
+                Buyer
+              </div>
+              <div class="card-block">
+                <div class="list-group">
+                  <a href="./index.html" class="list-group-item active">
+                    New Orders
+                  </a>
+                  <a href="./return_order.html" class="list-group-item list-group-item-action">Return Orders</a>
+                  <a href="./block_buyer.html" class="list-group-item list-group-item-action">Block Buyers</a>
+                </div>
+              </div>
+            </div><!-- buyer card end -->
+
+            <div class="card"><!-- seller card -->
+              <div class="card-header">
+                Seller
+              </div>
+              <div class="card-block">
+                <div class="list-group">
+                  <a href="./new_seller.html" class="list-group-item list-group-item-action">
+                    New Sellers
+                  </a>
+                  <a href="./new_commodities.html" class="list-group-item list-group-item-action">New Commodities</a>
+                  <a href="./commodities.html" class="list-group-item list-group-item-action">Commodities</a>
+                </div>
+              </div>
+            </div><!-- seller card end -->
+
+            <div class="card"><!-- admin card -->
+              <div class="card-header">
+                Admin
+              </div>
+              <div class="card-block">
+                <div class="list-group">
+                  <a href="./admin.html" class="list-group-item list-group-item-action">
+                    Admins
+                  </a>
+                </div>
+              </div>
+            </div><!-- admin card end -->
+          </nav>
+
+        </div><!-- side menu end -->
+
+        <div class="col-sm-9">
+
+          <nav class="navbar navbar-light bg-faded"><!-- top navbar -->
+            <span class="navbar-text">
+              ID:
+            </span>
+            <span class="navbar-text text-info">
+              XXXX
+            </span>
+            <span class="navbar-text">
+              Name:
+            </span>
+            <span class="navbar-text text-info">
+              XXXX
+            </span>
+            <form class="form-inline float-xs-right">
+              <button class="btn btn-outline-danger " type="button">Logout</button>
+            </form>
+          </nav><!-- top navbar end -->
+
+          <form><!-- search form -->
+            <div class="form-group row">
+              <label for="input-transaction-number" class="col-sm-2 col-form-label">Order Number</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="input-transaction-number" placeholder="Order Number">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="input-phone-number" class="col-sm-2 col-form-label">Phone Number</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="input-phone-number" placeholder="Phone Number">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="offset-sm-2 col-sm-4">
+                <button type="submit" class="btn btn-primary">Search</button>
+              </div>
+            </div>
+          </form><!-- search form end -->
+
+
+          <div class="card"><!-- order list div -->
+
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs float-xs-left">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">All</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./locked_new_order.html">Locked</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card-block">
+              <table class="table table-hover">
+                <thead class="thead-inverse">
+                  <tr>
+                    <th>#</th>
+                    <th>Order Number</th>
+                    <th>Time</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>SDAF312323234</td>
+                    <td>12/01/2016 23:32:21</td>
+                    <td>
+                      <a href="./return_order_detail.html" class="btn btn-primary">Lock</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>SDAF312323234</td>
+                    <td>12/01/2016 23:32:21</td>
+                    <td>
+                      <button class="btn btn-primary">Lock</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>SDAF312323234</td>
+                    <td>12/01/2016 23:32:21</td>
+                    <td>
+                      <button class="btn btn-primary">Lock</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>SDAF312323234</td>
+                    <td>12/01/2016 23:32:21</td>
+                    <td>
+                      <button class="btn btn-primary">Lock</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>SDAF312323234</td>
+                    <td>12/01/2016 23:32:21</td>
+                    <td>
+                      <button class="btn btn-primary">Lock</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>SDAF312323234</td>
+                    <td>12/01/2016 23:32:21</td>
+                    <td>
+                      <button class="btn btn-primary">Lock</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>SDAF312323234</td>
+                    <td>12/01/2016 23:32:21</td>
+                    <td>
+                      <button class="btn btn-primary">Lock</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>SDAF312323234</td>
+                    <td>12/01/2016 23:32:21</td>
+                    <td>
+                      <button class="btn btn-primary">Lock</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <nav class="card-block text-xs-center">
+              <ul class="pagination">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div><!-- order list div end -->
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+  </body>
+</html>

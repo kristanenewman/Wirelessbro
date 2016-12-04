@@ -28,7 +28,7 @@
                     New Orders
                   </a>
                   <a href="#" class="list-group-item list-group-item-action">Return Orders</a>
-                  <a href="#" class="list-group-item list-group-item-action">Buyer Group</a>
+                  <a href="#" class="list-group-item list-group-item-action">Block Buyers</a>
                 </div>
               </div>
             </div><!-- buyer card end -->
@@ -65,7 +65,8 @@
         </div><!-- side menu end -->
 
         <div class="col-sm-9">
-          <nav class="navbar navbar-light bg-faded">
+
+          <nav class="navbar navbar-light bg-faded"><!-- top navbar -->
             <span class="navbar-text">
               ID:
             </span>
@@ -81,8 +82,91 @@
             <form class="form-inline float-xs-right">
               <button class="btn btn-outline-danger " type="button">Logout</button>
             </form>
-          </nav>
+          </nav><!-- top navbar end -->
 
+          <h5>Deliver Address:</h5>
+          <dl class="row">
+            <dt class="col-sm-2">Address 1:</dt>
+            <dd class="col-sm-10">XXXXXXXXXXXXXXXXX</dd>
+
+            <dt class="col-sm-2">Address 2:</dt>
+            <dd class="col-sm-10">XXXXXX</dd>
+
+            <dt class="col-sm-2">City:</dt>
+            <dd class="col-sm-10">XXX</dd>
+
+            <dt class="col-sm-2">State:</dt>
+            <dd class="col-sm-10">XXX</dd>
+
+            <dt class="col-sm-2">Zipcode:</dt>
+            <dd class="col-sm-10">XXX</dd>
+
+            <dt class="col-sm-2">Phone Number:</dt>
+            <dd class="col-sm-10">(XXX)-XXX-XXXX</dd>
+
+            <dt class="col-sm-2">recipient:</dt>
+            <dd class="col-sm-10">XXXX XXXX</dd>
+          </dl>
+
+          <div><!-- order list div -->
+            <table class="table table-hover">
+              <thead class="thead-inverse">
+                <tr>
+                  <th>Product Number</th>
+                  <th>Product</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>SDAF312323234</td>
+                  <td>
+                    <div class="media">
+                      <a class="media-left" href="#">
+                        <img class="media-object" height="40" src="./product.png" alt="Generic placeholder image">
+                      </a>
+                      <div class="media-body media-middle">
+                        <h6 class="media-heading">Product Name</h6>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p>5</p>
+                  </td>
+                  <td>
+                    <p>65.5</p>
+                  </td>
+
+                </tr>
+
+              </tbody>
+            </table>
+            <hr />
+            <h5>Express Information</h5>
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Deliver Number</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <label for="exampleSelect1">Express</label>
+                <select class="form-control" id="exampleSelect1">
+                  <option>UPS</option>
+                  <option>Fedex</option>
+                  <option>USPS</option>
+
+                </select>
+              </div>
+              <button class="btn btn-primary">Return</button>
+            </form>
+
+          </div><!-- order list div end -->
+
+          <div class="row">
+
+          </div>
         </div>
       </div>
     </div>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3"><!-- side menu -->
+          <form class="mb-1 mt-1">
+            <input type="text" class="form-control" placeholder="Search..." autocomplete="off">
+          </form>
+
+          <nav>
+            <div class="card"><!-- buyer card -->
+              <div class="card-header">
+                Buyer
+              </div>
+              <div class="card-block">
+                <div class="list-group">
+                  <a href="./index.html" class="list-group-item list-group-item-action">
+                    New Orders
+                  </a>
+                  <a href="./return_order.html" class="list-group-item list-group-item-action">Return Orders</a>
+                  <a href="./block_buyer.html" class="list-group-item list-group-item-action">Block Buyers</a>
+                </div>
+              </div>
+            </div><!-- buyer card end -->
+
+            <div class="card"><!-- seller card -->
+              <div class="card-header">
+                Seller
+              </div>
+              <div class="card-block">
+                <div class="list-group">
+                  <a href="./new_seller.html" class="list-group-item active">
+                    New Sellers
+                  </a>
+                  <a href="./new_commodities.html" class="list-group-item list-group-item-action">New Commodities</a>
+                  <a href="./commodities.html" class="list-group-item list-group-item-action">Commodities</a>
+                </div>
+              </div>
+            </div><!-- seller card end -->
+
+            <div class="card"><!-- admin card -->
+              <div class="card-header">
+                Admin
+              </div>
+              <div class="card-block">
+                <div class="list-group">
+                  <a href="./admin.html" class="list-group-item list-group-item-action">
+                    Admins
+                  </a>
+                </div>
+              </div>
+            </div><!-- admin card end -->
+          </nav>
+
+        </div><!-- side menu end -->
+
+        <div class="col-sm-9">
+
+          <nav class="navbar navbar-light bg-faded"><!-- top navbar -->
+            <span class="navbar-text">
+              ID:
+            </span>
+            <span class="navbar-text text-info">
+              XXXX
+            </span>
+            <span class="navbar-text">
+              Name:
+            </span>
+            <span class="navbar-text text-info">
+              XXXX
+            </span>
+            <form class="form-inline float-xs-right">
+              <button class="btn btn-outline-danger " type="button">Logout</button>
+            </form>
+          </nav><!-- top navbar end -->
+
+          <div class="card"><!-- order list div -->
+            <div class="card-block">
+              <form>
+                <div class="custom-controls-stacked clearfix">
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <h5 class="custom-control-description">Name:</h5>
+                    <p>XXXXXXXXXXXXXXX</p>
+                  </label>
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <h5 class="custom-control-description">Address:</h5>
+                    <p>XXXXXXXXXXXXXXX</p>
+                  </label>
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <h5 class="custom-control-description">Email:</h5>
+                    <p>XXXXXXXXXXXXXXX</p>
+                  </label>
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <h5 class="custom-control-description">Phone:</h5>
+                    <p>XXXXXXXXXXXXXXX</p>
+                  </label>
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <h5 class="custom-control-description">CEO:</h5>
+                    <p>XXXXXXXXXXXXXXX</p>
+                  </label>
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <h5 class="custom-control-description">Steward:</h5>
+                    <p>XXXXXXXXXXXXXXX</p>
+                  </label>
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <h5 class="custom-control-description">Employee Number:</h5>
+                    <p>111</p>
+                  </label>
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <h5 class="custom-control-description">Product Catagory:</h5>
+                    <p>XXXXXXXXXXXXXXX</p>
+                  </label>
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <h5 class="custom-control-description">Seller Permit:</h5>
+                    <p>XXXXXXXXXXXXXXX</p>
+                  </label>
+                </div>
+                <button class="btn btn-success">Verify</button>
+                <button class="btn btn-danger">Reject</button>
+              </form>
+            </div>
+          </div><!-- order list div end -->
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+  </body>
+</html>
