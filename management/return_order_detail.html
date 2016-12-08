@@ -116,7 +116,7 @@
                   <th>Product</th>
                   <th>Quantity</th>
                   <th>Price</th>
-
+                  <th>Status</th>
                 </tr>
               </thead>
               <tbody>
@@ -138,30 +138,35 @@
                   <td>
                     <p>65.5</p>
                   </td>
-
+                  <td>
+                    <button class="btn btn-success" disabled>Returned</button>
+                  </td>
                 </tr>
-
+                <tr>
+                  <td>SDAF312323234</td>
+                  <td>
+                    <div class="media">
+                      <a class="media-left" href="#">
+                        <img class="media-object" height="40" src="./product.png" alt="Generic placeholder image">
+                      </a>
+                      <div class="media-body media-middle">
+                        <h6 class="media-heading">Product Name</h6>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p>5</p>
+                  </td>
+                  <td>
+                    <p>65.5</p>
+                  </td>
+                  <td>
+                    <button class="btn btn-primary">Return</button>
+                  </td>
+                </tr>
               </tbody>
             </table>
-            <hr />
-            <h5>Express Information</h5>
-            <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Deliver Number</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-              </div>
-              <div class="form-group">
-                <label for="exampleSelect1">Express</label>
-                <select class="form-control" id="exampleSelect1">
-                  <option>UPS</option>
-                  <option>Fedex</option>
-                  <option>USPS</option>
-
-                </select>
-              </div>
-              <button class="btn btn-primary">Return</button>
-            </form>
-
+            <button class="btn btn-primary">Return All</button>
           </div><!-- order list div end -->
 
           <div class="row">

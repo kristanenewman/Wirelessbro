@@ -69,30 +69,9 @@
             </form>
           </nav><!-- top navbar end -->
 
-          <form><!-- search form -->
-            <div class="form-group row">
-              <label for="input-transaction-number" class="col-sm-2 col-form-label">Product Number</label>
-              <div class="col-sm-4">
-                <input type="text" class="form-control" id="input-transaction-number" placeholder="Transaction Number">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="input-phone-number" class="col-sm-2 col-form-label">Phone Number</label>
-              <div class="col-sm-4">
-                <input type="text" class="form-control" id="input-phone-number" placeholder="Phone Number">
-              </div>
-            </div>
-            <div class="form-group row">
-              <div class="offset-sm-2 col-sm-4">
-                <button type="submit" class="btn btn-primary">Search</button>
-              </div>
-            </div>
-          </form><!-- search form end -->
-
-
           <div class="card"><!-- order list div -->
 
-            <div class="card-header">
+            <!-- <div class="card-header">
               <ul class="nav nav-tabs card-header-tabs float-xs-left">
                 <li class="nav-item">
                   <a class="nav-link active" href="#">New</a>
@@ -101,10 +80,10 @@
                   <a class="nav-link" href="./shelf.html">Shelf</a>
                 </li>
               </ul>
-            </div>
+            </div> -->
 
             <div class="card-block">
-              <a href="./template_list.html" class="btn btn-success mb-1">+</a>
+              <a href="./product_detail.html" class="btn btn-success mb-1">+</a>
 
               <form class="form-inline mb-1">
                 <div class="form-group">
@@ -113,90 +92,49 @@
                 <button type="submit" class="btn btn-primary">Search</button>
               </form>
 
-              <table class="table table-hover">
-                <thead class="thead-inverse">
-                  <tr>
-                    <th>#</th>
-                    <th>Product Number</th>
-                    <th>Product Name</th>
-                    <th>Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>SDAF312323234</td>
-                    <td>XXXXXXXXXX</td>
-                    <td>
-                      <button href="" class="btn btn-success">Add</button>
-                      <a href="./product_detail.html" class="btn btn-primary">Detail</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>SDAF312323234</td>
-                    <td>XXXXXXXXXX</td>
-                    <td>
-                      <button href="" class="btn btn-success">Add</button>
-                      <a href="./new_product.html" class="btn btn-primary">Detail</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>SDAF312323234</td>
-                    <td>XXXXXXXXXXXX</td>
-                    <td>
-                      <button href="" class="btn btn-success">Add</button>
-                      <a href="./new_product.html" class="btn btn-primary">Detail</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>SDAF312323234</td>
-                    <td>XXXXXXXXXXXX</td>
-                    <td>
-                      <button href="" class="btn btn-success">Add</button>
-                      <a href="./new_product.html" class="btn btn-primary">Detail</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>SDAF312323234</td>
-                    <td>XXXXXXXXXXXX</td>
-                    <td>
-                      <button href="" class="btn btn-success">Add</button>
-                      <a href="./new_product.html" class="btn btn-primary">Detail</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>SDAF312323234</td>
-                    <td>XXXXXXXXXXXX</td>
-                    <td>
-                      <button href="" class="btn btn-success">Add</button>
-                      <a href="./new_product.html" class="btn btn-primary">Detail</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>SDAF312323234</td>
-                    <td>XXXXXXXXXXXXX</td>
-                    <td>
-                      <button href="" class="btn btn-success">Add</button>
-                      <a href="./new_product.html" class="btn btn-primary">Detail</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>SDAF312323234</td>
-                    <td>XXXXXXXXXXXXX</td>
-                    <td>
-                      <button href="" class="btn btn-success">Add</button>
-                      <a href="./new_product.html" class="btn btn-primary">Detail</a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="card  text-xs-center">
+                    <img class="card-img-top" height="100" src="./product.png" alt="Card image cap">
+                    <div class="card-block text-xs-left">
+                      <h4 class="card-title text-xs-center">Card title</h4>
+                      <p class="card-text">Some qent.</p>
+                      <a href="./product_detail.html" class="btn btn-success">Use</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card  text-xs-center">
+                    <img class="card-img-top" height="100" src="./product.png" alt="Card image cap">
+                    <div class="card-block text-xs-left">
+                      <h4 class="card-title text-xs-center">Card title</h4>
+                      <p class="card-text">Some qent.</p>
+                      <a href="./product_detail.html" class="btn btn-success">Use</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card  text-xs-center">
+                    <img class="card-img-top" height="100" src="./product.png" alt="Card image cap">
+                    <div class="card-block text-xs-left">
+                      <h4 class="card-title text-xs-center">Card title</h4>
+                      <p class="card-text">Some qent.</p>
+                      <a href="./product_detail.html" class="btn btn-success">Use</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card  text-xs-center">
+                    <img class="card-img-top" height="100" src="./product.png" alt="Card image cap">
+                    <div class="card-block text-xs-left">
+                      <h4 class="card-title text-xs-center">Card title</h4>
+                      <p class="card-text">Some qent.</p>
+                      <a href="./product_detail.html" class="btn btn-success">Use</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
 
             <nav class="card-block text-xs-center">
