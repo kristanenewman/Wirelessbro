@@ -1,0 +1,208 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="row"> <!-- row caption -->
+      <div class="col-sm-3">
+        <div class="row">
+          <div class="col-sm-4 text-xs-center">Group</div>
+          <div class="col-sm-8">
+            <select class="form-control mb-1">
+              <option>Percentage</option>
+              <option>Custom</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="row">
+          <div class="col-sm-3 text-xs-center">
+            Min
+          </div>
+          <div class="col-sm-3 text-xs-center">
+            Max
+          </div>
+          <div class="col-sm-3 text-xs-center">
+            Price
+          </div>
+        </div>
+      </div>
+    </div> <!-- end row caption -->
+    <div class="row">
+      <div class="col-sm-3"> <!-- div col:base price -->
+        <div class="row">
+          <div class="col-sm-4 text-xs-center">A</div>
+          <div class="col-sm-8">
+
+            <div class="input-group">
+              <span class="input-group-addon">$</span>
+              <input type="text" class="form-control" value="50">
+            </div>
+          </div>
+        </div>
+      </div> <!-- end div col:base price -->
+      <div class="col-sm-8">
+        <div class="row mb-1">
+          <div class="col-sm-3">
+            <input type="text" class="form-control" placeholder="Min quantity" value="0">
+          </div>
+          <div class="col-sm-3">
+            <input type="text" class="form-control" placeholder="Max quantity" value="50" >
+          </div>
+          <div class="col-sm-3">
+            <div class="input-group">
+              <span class="input-group-addon">$</span>
+              <input type="text" class="form-control" placeholder="Price"  value="50"  readonly>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-1">
+          <div class="col-sm-3">
+            <input type="text" class="form-control" placeholder="Min quantity" value="51">
+          </div>
+          <div class="col-sm-3">
+            <input type="text" class="form-control" placeholder="Max quantity" value="">
+          </div>
+          <div class="col-sm-3">
+            <div class="input-group">
+              <span class="input-group-addon">$</span>
+              <input type="text" class="form-control" placeholder="Price">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <button class="btn btn-info btn-sm">+</button> <small class="text-info">Add one price option</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="row">
+          <div class="col-sm-4 text-xs-center">B</div>
+          <div class="col-sm-8">
+            <div class="input-group mb-1">
+
+              <input type="text" class="form-control" value="80">
+              <span class="input-group-addon">% Off</span>
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">$</span>
+              <input type="text" class="form-control" placeholder="Base price" value="40" readonly>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-8 mb-1">
+        <div class="row mb-1">
+          <div class="col-sm-3">
+            <input type="text" class="form-control" placeholder="Min quantity" value="0">
+          </div>
+          <div class="col-sm-3">
+            <input type="text" class="form-control" placeholder="Max quantity">
+          </div>
+          <div class="col-sm-3">
+            <div class="input-group">
+              <span class="input-group-addon">$</span>
+              <input type="text" class="form-control" placeholder="Price"  value="40"  readonly>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <button class="btn btn-info btn-sm">+</button> <small class="text-info">Add one price option</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="row">
+          <div class="col-sm-4 text-xs-center">C</div>
+          <div class="col-sm-8">
+            <div class="input-group mb-1">
+              <input type="text" class="form-control" placeholder="Percentage">
+              <span class="input-group-addon">% Off</span>
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">$</span>
+              <input type="text" class="form-control" placeholder="Base price"  readonly>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-8 mb-1">
+        <!-- <div class="row mb-1">
+          <div class="col-sm-3">
+            <input type="text" class="form-control" placeholder="Min quantity" value="0">
+          </div>
+          <div class="col-sm-3">
+            <input type="text" class="form-control" placeholder="Max quantity">
+          </div>
+          <div class="col-sm-3">
+            <div class="input-group">
+              <span class="input-group-addon">$</span>
+              <input type="text" class="form-control" placeholder="Price">
+            </div>
+          </div>
+        </div> -->
+        <div class="row">
+          <div class="col-sm-6">
+            <button class="btn btn-info btn-sm">+</button> <small class="text-info">Add one price option</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="row">
+          <div class="col-sm-4 text-xs-center">D</div>
+          <div class="col-sm-8  mb-1">
+            <div class="input-group mb-1">
+              <input type="text" class="form-control" placeholder="Percentage">
+              <span class="input-group-addon">% Off</span>
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">$</span>
+              <input type="text" class="form-control" placeholder="Base price"  readonly>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-8 mb-1">
+        <!-- <div class="row mb-1">
+          <div class="col-sm-3">
+            <input type="text" class="form-control" placeholder="Min quantity" value="0">
+          </div>
+          <div class="col-sm-3">
+            <input type="text" class="form-control" placeholder="Max quantity">
+          </div>
+          <div class="col-sm-3">
+            <div class="input-group">
+              <span class="input-group-addon">$</span>
+              <input type="text" class="form-control" placeholder="Price">
+            </div>
+          </div>
+        </div> -->
+        <div class="row">
+          <div class="col-sm-6">
+            <button class="btn btn-info btn-sm">+</button> <small class="text-info">Add one price option</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

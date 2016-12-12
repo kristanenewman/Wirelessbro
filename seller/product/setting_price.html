@@ -1,0 +1,300 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container"> <!-- container -->
+      <div class="row"><!--- div.row header --->
+        <div class="col-sm-12">
+          <form><!--  form: classify  -->
+            <fieldset class="form-group">
+              <legend>Price Classification</legend>
+              <div class="form-check">
+                <label class="form-check-label text-info">
+                  <input type="checkbox" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1">
+                  Select All
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1">
+                  Color
+                </label>
+              </div>
+              <div class="form-check">
+              <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                  Size
+                </label>
+              </div>
+              <div class="form-check">
+              <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+                  Model
+                </label>
+              </div>
+              <div class="form-check">
+              <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+                  Specific 1
+                </label>
+              </div>
+            </fieldset>
+            <div class="btn-group">
+              <button class="btn btn-primary">Classify</button>
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#price-table">
+                Set All
+              </button>
+              <button class="btn btn-warning">Skip</button>
+            </div>
+          </form><!-- end form: classify  -->
+        </div>
+      </div><!--- end div.row header --->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card">
+            <div class="card-block">
+              <ol class="breadcrumb mb-0"> <!-- breadcrumb: specifics-->
+                <li class="breadcrumb-item">Specific 1</li>
+                <li class="breadcrumb-item">Specific 2</li>
+                <li class="breadcrumb-item">Specific 3</li>
+              </ol> <!-- end breadcrumb: specifics-->
+            </div>
+            <ul class="list-group list-group-flush"><!-- list-group: products list -->
+              <li class="list-group-item">UPC 1</li>
+              <li class="list-group-item">UPC 1</li>
+              <li class="list-group-item">UPC 1</li>
+            </ul><!-- end list-group: products list -->
+            <div class="card-block">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#price-table">Setting Price</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- end container -->
+
+    <div class="modal fade" id="price-table" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><!-- modal: price setting -->
+      <div class="modal-dialog modal-lg" role="document"><!-- modal-dialog: price setting -->
+        <div class="modal-content">
+          <div class="modal-header"><!-- modal-header: title -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">Price rules</h4>
+          </div><!-- end modal-header: title -->
+          <div class="modal-header"><!-- modal-header: buttons -->
+            <button type="button" class="btn btn-warning">Reset</button>
+            <button type="button" class="btn btn-success">Save</button>
+          </div><!-- end modal-header: buttons -->
+          <div class="modal-body">
+            <div class="row"> <!-- row: caption -->
+
+              <div class="col-sm-4"><!-- left caption -->
+                <div class="row">
+
+                  <div class="col-sm-3 text-xs-center"><!-- left-left cpation -->
+                    <span class="navbar-text">Group</span>
+                  </div><!-- end left-left cpation -->
+
+                  <div class="col-sm-9"><!-- left-right caption -->
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <span class="navbar-text">Measure</span>
+                      </div>
+                      <div class="col-sm-8">
+                        <select class="form-control">
+                          <option>Percentage</option>
+                          <option>Custom</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div><!-- end left-right caption -->
+
+                </div>
+              </div><!-- end left caption -->
+
+              <div class="col-sm-8"> <!-- right caption -->
+                <div class="row">
+                  <div class="col-sm-4 text-xs-center">
+                    <span class="navbar-text">Min</span>
+                  </div>
+                  <div class="col-sm-4 text-xs-center">
+                    <span class="navbar-text">Max</span>
+                  </div>
+                  <div class="col-sm-4 text-xs-center">
+                    <span class="navbar-text">Price</span>
+                  </div>
+                </div>
+              </div><!-- end right caption -->
+            </div> <!-- end row: caption -->
+            <hr />
+            <div class="row"><!-- group A -->
+              <div class="col-sm-4"> <!-- div col:base price -->
+                <div class="row">
+                  <div class="col-sm-3 text-xs-center">
+                    <span class="navbar-text">A</span>
+                  </div>
+                  <div class="col-sm-9">
+                    <div class="input-group">
+                      <span class="input-group-addon">$</span>
+                      <input type="text" class="form-control" value="50">
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- end div col:base price -->
+              <div class="col-sm-8">
+                <div class="row mb-1">
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Min quantity" value="0">
+                  </div>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Max quantity" value="50" >
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="input-group">
+                      <span class="input-group-addon">$</span>
+                      <input type="text" class="form-control" placeholder="Price"  value="50"  readonly>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-1"><!-- quantity price -->
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Min quantity" value="51">
+                  </div>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Max quantity" value="">
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="input-group">
+                      <span class="input-group-addon">$</span>
+                      <input type="text" class="form-control" placeholder="Price">
+                    </div>
+                  </div>
+                </div><!-- end quantity price -->
+                <div class="row"><!-- add new option -->
+                  <div class="col-sm-6">
+                    <button class="btn btn-info btn-sm">+</button> <small class="text-info">Add one price option</small>
+                  </div>
+                </div><!-- end add new option -->
+              </div>
+            </div><!-- end group A -->
+            <hr />
+
+            <div class="row"><!-- group B -->
+              <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-sm-3 text-xs-center">
+                    <span class="navbar-text">B</span>
+                  </div>
+                  <div class="col-sm-9">
+                    <div class="input-group mb-1">
+
+                      <input type="text" class="form-control" value="80">
+                      <span class="input-group-addon">% Off</span>
+                    </div>
+                    <div class="input-group">
+                      <span class="input-group-addon">$</span>
+                      <input type="text" class="form-control" placeholder="Base price" value="40" readonly>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-8 mb-1">
+                <div class="row mb-1">
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Min quantity" value="0">
+                  </div>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Max quantity">
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="input-group">
+                      <span class="input-group-addon">$</span>
+                      <input type="text" class="form-control" placeholder="Price"  value="40"  readonly>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <button class="btn btn-info btn-sm">+</button> <small class="text-info">Add one price option</small>
+                  </div>
+                </div>
+              </div>
+            </div><!-- end group B -->
+
+            <hr />
+            <div class="row"><!-- group C -->
+              <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-sm-3 text-xs-center">
+                    <span class="navbar-text">C</span>
+                  </div>
+                  <div class="col-sm-9">
+                    <div class="input-group mb-1">
+                      <input type="text" class="form-control" placeholder="Percentage">
+                      <span class="input-group-addon">% Off</span>
+                    </div>
+                    <div class="input-group">
+                      <span class="input-group-addon">$</span>
+                      <input type="text" class="form-control" placeholder="Base price"  readonly>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-8 mb-1">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <button class="btn btn-info btn-sm">+</button> <small class="text-info">Add one price option</small>
+                  </div>
+                </div>
+              </div>
+            </div><!-- end group C -->
+            <hr />
+            <div class="row"><!-- group D -->
+              <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-sm-3 text-xs-center">
+                    <span class="navbar-text">D</span>
+                  </div>
+                  <div class="col-sm-9  mb-1">
+                    <div class="input-group mb-1">
+                      <input type="text" class="form-control" placeholder="Percentage">
+                      <span class="input-group-addon">% Off</span>
+                    </div>
+                    <div class="input-group">
+                      <span class="input-group-addon">$</span>
+                      <input type="text" class="form-control" placeholder="Base price"  readonly>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-8 mb-1">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <button class="btn btn-info btn-sm">+</button> <small class="text-info">Add one price option</small>
+                  </div>
+                </div>
+              </div>
+            </div><!-- end group D -->
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success">Save</button>
+          </div>
+        </div>
+      </div><!-- end modal-dialog: price setting -->
+    </div><!-- end Modal: price setting -->
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+  </body>
+</html>
