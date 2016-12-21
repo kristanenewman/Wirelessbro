@@ -26,3 +26,11 @@
 
 ** withdraw **  
 1. 由于销量等原因，平台给予下架的商品
+
+
+专业account
+相关account
+非相关account
+block account
+
+# 平台后台管理系统

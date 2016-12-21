@@ -13,55 +13,47 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-3"><!-- side menu -->
-          <form class="mb-1 mt-1">
-            <input type="text" class="form-control" placeholder="Search..." autocomplete="off">
-          </form>
-
           <nav>
-            <div class="card"><!-- buyer card -->
-              <div class="card-header">
-                Buyer
-              </div>
+            <div class="card"><!-- order card -->
+              <h5 class="card-header bg-info text-white">Order</h5>
               <div class="card-block">
                 <div class="list-group">
-                  <a href="#" class="list-group-item active">
-                    New Orders
-                  </a>
-                  <a href="#" class="list-group-item list-group-item-action">Return Orders</a>
-                  <a href="#" class="list-group-item list-group-item-action">Block Buyers</a>
+                  <a class="list-group-item">New Orders</a>
+                  <a class="list-group-item">Return Orders</a>
                 </div>
               </div>
-            </div><!-- buyer card end -->
+            </div><!-- order card end -->
 
             <div class="card"><!-- seller card -->
-              <div class="card-header">
-                Seller
-              </div>
+              <h5 class="card-header bg-info text-white">Merchandise</h5>
               <div class="card-block">
                 <div class="list-group">
-                  <a href="#" class="list-group-item list-group-item-action">
-                    New Sellers
-                  </a>
-                  <a href="#" class="list-group-item list-group-item-action">New Commodities</a>
-                  <a href="#" class="list-group-item list-group-item-action">Commodities</a>
+                  <a class="list-group-item">New Merchandise</a>
+                  <a class="list-group-item">待下架商品</a>
+                </div>
+              </div>
+            </div><!-- seller card end -->
+
+            <div class="card"><!-- seller card -->
+              <h5 class="card-header bg-info text-white">User</h5>
+              <div class="card-block">
+                <div class="list-group">
+                  <a class="list-group-item">Buyer</a>
+                  <a class="list-group-item">Seller</a>
                 </div>
               </div>
             </div><!-- seller card end -->
 
             <div class="card"><!-- admin card -->
-              <div class="card-header">
-                Admin
-              </div>
+              <h5 class="card-header bg-info text-white">Admin</h5>
               <div class="card-block">
                 <div class="list-group">
-                  <a href="#" class="list-group-item list-group-item-action">
-                    Admins
-                  </a>
+                  <a class="list-group-item">Create Admin</a>
+                  <a class="list-group-item">Current Admin</a>
                 </div>
               </div>
             </div><!-- admin card end -->
           </nav>
-
         </div><!-- side menu end -->
 
         <div class="col-sm-9">
@@ -108,69 +100,80 @@
             <dd class="col-sm-10">XXXX XXXX</dd>
           </dl>
 
-          <div><!-- order list div -->
-            <table class="table table-hover">
-              <thead class="thead-inverse">
-                <tr>
-                  <th>Product Number</th>
-                  <th>Product</th>
-                  <th>Quantity</th>
-                  <th>Price</th>
-                  <th>
-                    Status
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>SDAF312323234</td>
-                  <td>
-                    <div class="media">
-                      <a class="media-left" href="#">
-                        <img class="media-object" height="40" src="./product.png" alt="Generic placeholder image">
-                      </a>
-                      <div class="media-body media-middle">
-                        <h6 class="media-heading">Product Name</h6>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <p>5</p>
-                  </td>
-                  <td>
-                    <p>65.5</p>
-                  </td>
-                  <td>
-                    <button class="btn btn-primary">Package</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>SDAF312323234</td>
-                  <td>
-                    <div class="media">
-                      <a class="media-left" href="#">
-                        <img class="media-object" height="40" src="./product.png" alt="Generic placeholder image">
-                      </a>
-                      <div class="media-body media-middle">
-                        <h6 class="media-heading">Product Name</h6>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <p>5</p>
-                  </td>
-                  <td>
-                    <p>65.5</p>
-                  </td>
-                  <td>
-                    <button class="btn btn-success">Packaged</button>
-                  </td>
-                </tr>
+          <ul class="list-group mb-1">
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-xs-4">
+                  <h6>Product Number</h6>
+                  <p>XXXXX</p>
+                  <h6>Product Name</h6>
+                  <p>XXXXX</p>
+                </div>
+                <div class="col-xs-4">
+                  <h6>Quantity</h6>
+                  <p>XXXXX</p>
+                  <h6>Price</h6>
+                  <p>XXXXX</p>
+                </div>
+                <div class="col-xs-4">
+                  <h6>Company Name</h6>
+                  <p>XXXXX</p>
+                  <h6>Contact Phone</h6>
+                  <p>XXXXX</p>
+                </div>
+              </div>
+              <button class="btn btn-warning">Unpackaged</button>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-xs-4">
+                  <h6>Product Number</h6>
+                  <p>XXXXX</p>
+                  <h6>Product Name</h6>
+                  <p>XXXXX</p>
+                </div>
+                <div class="col-xs-4">
+                  <h6>Quantity</h6>
+                  <p>XXXXX</p>
+                  <h6>Price</h6>
+                  <p>XXXXX</p>
+                </div>
+                <div class="col-xs-4">
+                  <h6>Company Name</h6>
+                  <p>XXXXX</p>
+                  <h6>Contact Phone</h6>
+                  <p>XXXXX</p>
+                </div>
+              </div>
+              <button class="btn btn-primary">Packaging</button>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-xs-4">
+                  <h6>Product Number</h6>
+                  <p>XXXXX</p>
+                  <h6>Product Name</h6>
+                  <p>XXXXX</p>
+                </div>
+                <div class="col-xs-4">
+                  <h6>Quantity</h6>
+                  <p>XXXXX</p>
+                  <h6>Price</h6>
+                  <p>XXXXX</p>
+                </div>
+                <div class="col-xs-4">
+                  <h6>Company Name</h6>
+                  <p>XXXXX</p>
+                  <h6>Contact Phone</h6>
+                  <p>XXXXX</p>
+                </div>
+              </div>
+              <button class="btn btn-success">Packaged</button>
+            </li>
+          </ul>
 
-              </tbody>
-            </table>
-            <hr />
-            <h5>Express Information</h5>
+          <div>
+            <h5>Express Information:</h5>
             <form>
               <div class="form-group">
                 <label for="exampleInputEmail1">Deliver Number</label>

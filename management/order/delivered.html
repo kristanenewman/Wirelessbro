@@ -18,8 +18,8 @@
               <h5 class="card-header bg-info text-white">Order</h5>
               <div class="card-block">
                 <div class="list-group">
-                  <a class="list-group-item list-group-item-action" href="./order/incoming.html">New Orders</a>
-                  <a class="list-group-item list-group-item-action">Return Orders</a>
+                  <a class="list-group-item">New Orders</a>
+                  <a class="list-group-item">Return Orders</a>
                 </div>
               </div>
             </div><!-- order card end -->
@@ -28,8 +28,8 @@
               <h5 class="card-header bg-info text-white">Merchandise</h5>
               <div class="card-block">
                 <div class="list-group">
-                  <a class="list-group-item list-group-item-action" href="./product/new_product.html">New Merchandise</a>
-                  <a class="list-group-item list-group-item-action">待下架商品</a>
+                  <a class="list-group-item">New Merchandise</a>
+                  <a class="list-group-item">待下架商品</a>
                 </div>
               </div>
             </div><!-- seller card end -->
@@ -38,8 +38,8 @@
               <h5 class="card-header bg-info text-white">User</h5>
               <div class="card-block">
                 <div class="list-group">
-                  <a class="list-group-item list-group-item-action">Buyer</a>
-                  <a class="list-group-item list-group-item-action">Seller</a>
+                  <a class="list-group-item">Buyer</a>
+                  <a class="list-group-item">Seller</a>
                 </div>
               </div>
             </div><!-- seller card end -->
@@ -48,8 +48,8 @@
               <h5 class="card-header bg-info text-white">Admin</h5>
               <div class="card-block">
                 <div class="list-group">
-                  <a class="list-group-item list-group-item-action">Create Admin</a>
-                  <a class="list-group-item list-group-item-action">Current Admin</a>
+                  <a class="list-group-item">Create Admin</a>
+                  <a class="list-group-item">Current Admin</a>
                 </div>
               </div>
             </div><!-- admin card end -->
@@ -81,10 +81,13 @@
             <div class="card-header">
               <ul class="nav nav-tabs card-header-tabs float-xs-left">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">All</a>
+                  <a class="nav-link" href="./incoming.html">Incoming</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./locked_new_order.html">Locked</a>
+                  <a class="nav-link" href="./processing.html">Processing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./delivered.html">Delivered</a>
                 </li>
               </ul>
             </div>
@@ -93,51 +96,24 @@
               <table class="table table-hover">
                 <thead class="thead-inverse">
                   <tr>
-                    <th>#</th>
-                    <th>Package</th>
+                    <th>Package Number</th>
                     <th>Time</th>
                     <th>Status</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">1</th>
                     <td>SDAF312323234</td>
                     <td>12/01/2016 23:32:21</td>
                     <td>
-                      <a href="./new_order_detail.html" class="btn btn-primary">Lock</a>
+                      <a href="./delivered_detail.html" class="btn btn-primary">Detail</a>
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
-            <nav class="card-block text-xs-center">
-              <ul class="pagination">
-                <li class="page-item disabled">
-                  <a class="page-link" href="#" tabindex="-1" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                </li>
-                <li class="page-item active">
-                  <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                <li class="page-item"><a class="page-link" href="#">5</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
           </div><!-- order list div end -->
-
-
 
         </div>
       </div>
