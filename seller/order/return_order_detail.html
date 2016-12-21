@@ -24,10 +24,10 @@
               </div>
               <div class="card-block">
                 <div class="list-group">
-                  <a href="./page.html" class="list-group-item list-group-item-action">
+                  <a href="../product/page.html" class="list-group-item list-group-item-action">
                     Page Prototype
                   </a>
-                  <a href="./products_list_ready.html" class="list-group-item list-group-item-action">
+                  <a href="../product/products_list_ready.html" class="list-group-item list-group-item-action">
                     Page Management
                   </a>
                 </div>
@@ -40,10 +40,10 @@
               </div>
               <div class="card-block">
                 <div class="list-group">
-                  <a href="../order/order_list_new.html" class="list-group-item list-group-item-action">
+                  <a href="./order_list_new.html" class="list-group-item list-group-item-action">
                     New Order
                   </a>
-                  <a href="../order/return_list_new.html" class="list-group-item list-group-item-action">
+                  <a href="./return_list_new.html" class="list-group-item list-group-item-action">
                     Return Order
                   </a>
                 </div>
@@ -69,7 +69,8 @@
         </div><!-- 侧边栏结束 -->
 
         <div class="col-sm-9">
-          <nav class="navbar navbar-light bg-faded mb-1"><!-- top navbar -->
+
+          <nav class="navbar navbar-light bg-faded"><!-- top navbar -->
             <span class="navbar-text">
               ID:
             </span>
@@ -86,55 +87,85 @@
               <button class="btn btn-outline-danger " type="button">Logout</button>
             </form>
           </nav><!-- top navbar end -->
-          <!-- 添加右侧主界面 -->
 
-          <div class="card">
-            <h5 class="card-header">Describe the page</h5>
-            <div class="card-block">
-              <form class="mb-1">
-                <label><span class="text-danger">*</span> Catagory</label>
-                <div class="row">
-                  <div class="col-sm-3">
-                    <select size="10" class="form-control mb-1">
-                      <option>catagory 1</option>
-                      <option>catagory 2</option>
-                      <option>catagory 3</option>
-                      <option>catagory 4</option>
-                      <option>--- Enter your catagory ---</option>
-                    </select>
-                    <input type="text" class="form-control" placeholder="Enter your catagory">
-                  </div>
-                  <div class="col-sm-3">
-                    <select size="10" class="form-control mb-1">
-                      <option>catagory 1</option>
-                      <option>catagory 2</option>
-                      <option>catagory 3</option>
-                      <option>catagory 4</option>
-                      <option>--- Enter your catagory ---</option>
-                    </select>
-                    <input type="text" class="form-control" placeholder="Enter your catagory">
-                  </div>
-                  <div class="col-sm-3">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Enter your catagory">
+          <h5 class="mt-1">Area: XXXX</h5>
+
+          <div><!-- order list div -->
+            <table class="table table-hover">
+              <thead class="thead-inverse">
+                <tr>
+                  <th>Product Number</th>
+                  <th>Product</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                  <th>
+                    Status
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>SDAF312323234</td>
+                  <td>
+                    <div class="media">
+                      <a class="media-left" href="#">
+                        <img class="media-object" height="40" src="./product.png" alt="Generic placeholder image">
+                      </a>
+                      <div class="media-body media-middle">
+                        <h6 class="media-heading">Product Name</h6>
+                      </div>
                     </div>
-                    <a href="./create_page_confirm.html" class="btn btn-primary">Confirm</a>
+                  </td>
+                  <td>
+                    <p>5</p>
+                  </td>
+                  <td>
+                    <p>65.5</p>
+                  </td>
+                  <td>
+                    <button class="btn btn-primary">Get</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>SDAF312323234</td>
+                  <td>
+                    <div class="media">
+                      <a class="media-left" href="#">
+                        <img class="media-object" height="40" src="./product.png" alt="Generic placeholder image">
+                      </a>
+                      <div class="media-body media-middle">
+                        <h6 class="media-heading">Product Name</h6>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p>5</p>
+                  </td>
+                  <td>
+                    <p>65.5</p>
+                  </td>
+                  <td>
+                    <button class="btn btn-success">Returned</button>
+                  </td>
+                </tr>
 
-                    <div><small class="text-danger">
-                      点击Confirm之后才能显示填写`title`和`brief summary`表单
-                    </small></div>
-                  </div>
-                </div>
-              </form>
-            </div>
+              </tbody>
+            </table>
+
+              <button class="btn btn-primary">Send</button>
+            </form>
+
+          </div><!-- order list div end -->
+
+          <div class="row">
+
           </div>
-
-
-
-          <!-- end 添加右侧主界面 -->
         </div>
       </div>
     </div>
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>

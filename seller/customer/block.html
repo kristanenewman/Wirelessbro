@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3"><!-- 侧边栏开始 -->
+          <form class="mb-1 mt-1">
+            <input type="text" class="form-control" placeholder="Search..." autocomplete="off">
+          </form>
+
+          <nav>
+            <div class="card"><!-- buyer card -->
+              <div class="card-header">
+                Product
+              </div>
+              <div class="card-block">
+                <div class="list-group">
+                  <a href="../product/page.html" class="list-group-item list-group-item-action">
+                    Page Prototype
+                  </a>
+                  <a href="../product/products_list_ready.html" class="list-group-item list-group-item-action">
+                    Page Management
+                  </a>
+                </div>
+              </div>
+            </div><!-- buyer card end -->
+
+            <div class="card"><!-- seller card -->
+              <div class="card-header">
+                Order
+              </div>
+              <div class="card-block">
+                <div class="list-group">
+                  <a href="../order/order_list_new.html" class="list-group-item list-group-item-action">
+                    New Order
+                  </a>
+                  <a href="../order/return_list_new.html" class="list-group-item list-group-item-action">
+                    Return Order
+                  </a>
+                </div>
+              </div>
+            </div><!-- seller card end -->
+
+            <div class="card"><!-- seller card -->
+              <div class="card-header">
+                Customer
+              </div>
+              <div class="card-block">
+                <div class="list-group">
+                  <a href="./block.html" class="list-group-item list-group-item-action">
+                    Customer Group
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+          </nav>
+
+        </div><!-- 侧边栏结束 -->
+
+        <div class="col-sm-9">
+
+          <nav class="navbar navbar-light bg-faded mb-1"><!-- top navbar -->
+            <span class="navbar-text">
+              ID:
+            </span>
+            <span class="navbar-text text-info">
+              XXXX
+            </span>
+            <span class="navbar-text">
+              Name:
+            </span>
+            <span class="navbar-text text-info">
+              XXXX
+            </span>
+            <form class="form-inline float-xs-right">
+              <button class="btn btn-outline-danger " type="button">Logout</button>
+            </form>
+          </nav><!-- top navbar end -->
+          <!--- 添加右侧主页 --->
+
+          <div class="card">
+            <h5 class="card-header">Customer Group</h5>
+            <div class="card-block">
+
+              <form>
+                <div class="form-group row">
+                  <div class="col-xs-5">
+                    <label for="select-standard">Standard</label>
+                    <select class="form-control" id="select-standard">
+                      <option>Purchase</option>
+                      <option>Return Rate</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-xs-5">
+                    <label for="select-standard">Period</label>
+                    <select class="form-control" id="select-standard">
+                      <option>Last 7 days</option>
+                      <option>Last 30 days</option>
+                      <option>Last 90 days</option>
+                      <option>Last 365 days</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-xs-5">
+                    <input class="form-control" type="date">
+                  </div>
+
+                    <span class="text-xs-center float-xs-left">
+                      -
+                    </span>
+
+                  <div class="col-xs-5">
+                    <input class="form-control" type="date">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="select-standard">Value</label>
+                  <div class="row">
+                    <div class="col-xs-5">
+                      <input class="form-control" type="number" placeholder="Min">
+                    </div>
+
+                      <span class="text-xs-center float-xs-left">
+                        -
+                      </span>
+
+                    <div class="col-xs-5">
+                      <input class="form-control" type="number" placeholder="Max">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="select-standard">Value</label>
+                  <div class="row">
+                    <div class="col-xs-5">
+                      <div class="input-group">
+                        <input type="number" class="form-control" placeholder="Min">
+                        <span class="input-group-addon">%</span>
+                      </div>
+                    </div>
+
+                      <span class="text-xs-center float-xs-left">
+                        -
+                      </span>
+
+                    <div class="col-xs-5">
+                      <div class="input-group">
+                        <input type="number" class="form-control" placeholder="Max">
+                        <span class="input-group-addon">%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-xs-5">
+                    <button class="btn btn-primary">Filter</button>
+                  </div>
+                </div>
+              </form>
+
+              <dl class="alert alert-info" role="alert">
+                <dt>Average Purchases:</dt>
+                <dd>$10000</dd>
+                <dt>Average Return Rate:</dt>
+                <dd class="mb-0">10%</dd>
+              </dl>
+
+              <table class="table mb-0">
+                <thead class="thead-inverse">
+                  <tr>
+                    <th class="text-xs-center">Name</th>
+                    <th class="text-xs-center">Purchases</th>
+                    <th class="text-xs-center">Return Rate</th>
+                    <th class="text-xs-center">Group A</th>
+                    <th class="text-xs-center">Group B</th>
+                    <th class="text-xs-center">Group C</th>
+                    <th class="text-xs-center">Group D</th>
+                    <th class="text-xs-center">Block</th>
+                    <th class="text-xs-center">Confirm</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-xs-center">XXXX</td>
+                    <td class="text-xs-center">$1231</td>
+                    <td class="text-xs-center">30%</td>
+                    <td class="text-xs-center">
+                      <input type="radio" class="form-check-input" name="optionsRadios1">
+                    </td>
+                    <td class="text-xs-center">
+                      <input type="radio" class="form-check-input" name="optionsRadios1">
+                    </td>
+                    <td class="text-xs-center">
+                      <input type="radio" class="form-check-input" checked name="optionsRadios1">
+                    </td>
+                    <td class="text-xs-center">
+                      <input type="radio" class="form-check-input" name="optionsRadios1">
+                    </td>
+                    <td class="text-xs-center">
+                      <input type="radio" class="form-check-input" name="optionsRadios1">
+                    </td>
+                    <td class="text-xs-center">
+                      <button class="btn btn-primary">Confirm</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-xs-center">XXXX</td>
+                    <td class="text-xs-center">$1231</td>
+                    <td class="text-xs-center">30%</td>
+                    <td class="text-xs-center">
+                      <input type="radio" class="form-check-input" checked name="optionsRadios">
+                    </td>
+                    <td class="text-xs-center">
+                      <input type="radio" class="form-check-input" name="optionsRadios">
+                    </td>
+                    <td class="text-xs-center">
+                      <input type="radio" class="form-check-input" name="optionsRadios">
+                    </td>
+                    <td class="text-xs-center">
+                      <input type="radio" class="form-check-input" name="optionsRadios">
+                    </td>
+                    <td class="text-xs-center">
+                      <input type="radio" class="form-check-input" name="optionsRadios">
+                    </td>
+                    <td class="text-xs-center">
+                      <button class="btn btn-primary">Confirm</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div>
+                <button class="btn btn-success">Confirm All</button>
+                <button class="btn btn-warning">Reset All</button>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <!--- end 添加右侧主页 --->
+        </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+  </body>
+</html>

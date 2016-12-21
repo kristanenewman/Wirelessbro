@@ -12,7 +12,7 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-3"><!-- side menu -->
+        <div class="col-sm-3"><!-- 侧边栏开始 -->
           <form class="mb-1 mt-1">
             <input type="text" class="form-control" placeholder="Search..." autocomplete="off">
           </form>
@@ -24,8 +24,11 @@
               </div>
               <div class="card-block">
                 <div class="list-group">
-                  <a href="./index.html" class="list-group-item active">
-                    Page
+                  <a href="./page.html" class="list-group-item list-group-item-action">
+                    Page Prototype
+                  </a>
+                  <a href="./products_list_ready.html" class="list-group-item list-group-item-action">
+                    Page Management
                   </a>
                 </div>
               </div>
@@ -37,8 +40,11 @@
               </div>
               <div class="card-block">
                 <div class="list-group">
-                  <a href="./block_buyer.html" class="list-group-item list-group-item-action">
+                  <a href="../order/order_list_new.html" class="list-group-item list-group-item-action">
                     New Order
+                  </a>
+                  <a href="../order/return_list_new.html" class="list-group-item list-group-item-action">
+                    Return Order
                   </a>
                 </div>
               </div>
@@ -46,21 +52,21 @@
 
             <div class="card"><!-- seller card -->
               <div class="card-header">
-                Buyer
+                Customer
               </div>
               <div class="card-block">
                 <div class="list-group">
-                  <a href="./block_buyer.html" class="list-group-item list-group-item-action">
-                    Group Buyers
+                  <a href="../customer/block.html" class="list-group-item list-group-item-action">
+                    Customer Group
                   </a>
                 </div>
               </div>
-            </div><!-- seller card end -->
+            </div>
 
 
           </nav>
 
-        </div><!-- side menu end -->
+        </div><!-- 侧边栏结束 -->
 
         <div class="col-sm-9">
           <nav class="navbar navbar-light bg-faded mb-1"><!-- top navbar -->
@@ -115,6 +121,9 @@
                   <input type="file" class="form-control-file">
                   <small>Upload up to 12 photos that show your item in multiple views (such as front, back, side, and close-up).  You are required to have a minimum of 1 photo in your listing. </small>
                 </div>
+
+                <h5>--- SKU ---</h5>
+
                 <div class="form-group">
                   <label><span class="text-danger">*</span> UPC</label>
                   <input type="text" class="form-control">
@@ -125,7 +134,35 @@
                 </div>
                 <div class="form-group row">
                   <div class="col-sm-4">
-                    <small class="text-info">Add your own item specific</small>
+                    <small class="text-info">Add your SKU specific</small>
+                    <div class="input-group input-group-sm">
+                      <input type="text" class="form-control" placeholder="Specific Title">
+                      <span class="input-group-btn">
+                        <button class="btn btn-info btn-sm">+</button>
+                      </span>
+                    </div>
+                     <small class="text-info"></small>
+                  </div>
+
+                </div>
+                <h5>--- Other Specifics ---</h5>
+
+                <div class="form-group row">
+                  <label class="col-xs-12"><span class="text-danger">*</span> Volume</label>
+                  <div class="col-xs-4">
+                    <input type="text" class="form-control" placeholder="Length">
+                  </div>
+                  <div class="col-xs-4">
+                    <input type="text" class="form-control" placeholder="Width">
+                  </div>
+                  <div class="col-xs-4">
+                    <input type="text" class="form-control" placeholder="Height">
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <div class="col-sm-4">
+                    <small class="text-info">Add your other specific</small>
                     <div class="input-group input-group-sm">
                       <input type="text" class="form-control" placeholder="Specific Title">
                       <span class="input-group-btn">
