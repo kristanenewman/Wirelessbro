@@ -1,1 +1,1 @@
-## Catagory
+## Category
